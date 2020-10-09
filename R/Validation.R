@@ -89,17 +89,17 @@ validation_ind_lib <- function(final_es,
   ## plot results
   par(mfrow=c(2,2), mar=c(2,4,2,2), pty='s')
   
-  boxplot(ind_lib$Brunello, ylim = c(0,100),outline = F,frame.plot=F,xaxt='n',ylab = 'Jaccard Similarity %')
+  boxplot(Brunello, ylim = c(0,100),outline = F,frame.plot=F,xaxt='n',ylab = 'Jaccard Similarity %')
   title('Brunello', line = 1)
   axis(1, at = seq(18), labels=F)
   mtext('a', adj = -0.2, side = 3, line = 2, cex = 1)
-  boxplot(ind_lib$GeCKOv2, ylim = c(0,100),outline = F,frame.plot=F,yaxt='n',xaxt='n')
+  boxplot(GeCKOv2, ylim = c(0,100),outline = F,frame.plot=F,yaxt='n',xaxt='n')
   title('GeCKOv2', line = 1)
   axis(1, at = seq(18), labels=F)
   axis(2, labels=F)
-  boxplot(ind_lib$MinLib,ylim = c(0,100),outline = F,frame.plot=F,ylab = 'Jaccard Similarity %')
+  boxplot(MinLib,ylim = c(0,100),outline = F,frame.plot=F,ylab = 'Jaccard Similarity %')
   title('MinLibCas9', line = 1)
-  boxplot(ind_lib$Whitehead, ylim = c(0,100), outline = F, frame.plot=F, yaxt='n')
+  boxplot(Whitehead, ylim = c(0,100), outline = F, frame.plot=F, yaxt='n')
   title('Whitehead', line = 1)
   axis(2, labels=F)
 }
